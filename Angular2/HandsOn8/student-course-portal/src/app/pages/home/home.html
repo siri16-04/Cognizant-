@@ -1,0 +1,103 @@
+<div class="home-container">
+
+    <h1>{{ portalName }}</h1>
+
+    <p class="subtitle">
+        Manage your courses, enrollment and academic progress.
+    </p>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h2>📚</h2>
+            <h3>Courses Available</h3>
+            <p>{{ courseCount }}</p>
+        </div>
+
+        <div class="card">
+            <h2>✅</h2>
+            <h3>Enrolled</h3>
+            <p>3</p>
+        </div>
+
+        <div class="card">
+            <h2>🏆</h2>
+            <h3>Current GPA</h3>
+            <p>3.8</p>
+        </div>
+
+    </div>
+
+    <div class="action-section">
+
+        <button
+            class="enroll-btn"
+            (click)="onEnrollClick()"
+            [disabled]="!isPortalActive">
+
+            Enroll Now
+
+        </button>
+
+        <br><br>
+
+        <!-- POST -->
+        <button
+            class="enroll-btn"
+            (click)="addNewCourse()">
+
+            ➕ Add Course
+
+        </button>
+
+        <br><br>
+
+        <!-- PUT -->
+        <button
+            class="enroll-btn"
+            (click)="updateFirstCourse()">
+
+            ✏️ Update Course
+
+        </button>
+
+        <br><br>
+
+        <!-- DELETE -->
+        <button
+            class="enroll-btn"
+            (click)="deleteLastCourse()">
+
+            🗑️ Delete Last Course
+
+        </button>
+
+        <p class="message">
+
+            {{ message }}
+
+        </p>
+
+        <div class="search-section">
+
+            <input
+                type="text"
+                placeholder="🔍 Search Courses..."
+                [(ngModel)]="searchTerm">
+
+            <p>
+
+                Searching for:
+                <strong>{{ searchTerm }}</strong>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<app-course-summary-widget></app-course-summary-widget>
+
+<app-notification></app-notification>

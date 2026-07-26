@@ -1,0 +1,124 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+}
+
+.home-container{
+    text-align:center;
+    margin-top:40px;
+}
+
+.home-container h1{
+    color:#1565c0;
+    font-size:40px;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:gray;
+    font-size:18px;
+}
+
+.card-container{
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.card{
+
+    width:250px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+.card h2{
+
+    font-size:50px;
+
+}
+
+.card h3{
+
+    margin-top:15px;
+    color:#444;
+
+}
+
+.card p{
+
+    margin-top:20px;
+    font-size:35px;
+    color:#1565c0;
+    font-weight:bold;
+
+}
+/* Enroll Button */
+.enroll-btn{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:12px 28px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:25px;
+}
+
+.enroll-btn:hover{
+    background:#0d47a1;
+    transform:scale(1.05);
+}
+
+/* Success Message */
+.message{
+    color:green;
+    font-weight:bold;
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* Search Section */
+.search-section{
+    margin-top:35px;
+}
+
+.search-section input{
+    width:320px;
+    padding:12px;
+    border:2px solid #1565c0;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-section input:focus{
+    box-shadow:0 0 10px rgba(21,101,192,0.3);
+}
+
+.search-section p{
+    margin-top:12px;
+    font-size:18px;
+}
+
+.search-section strong{
+    color:#1565c0;
+}

@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.title{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+form{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#1976d2;
+    box-shadow:0 0 8px rgba(25,118,210,.25);
+}
+
+/* Validation */
+
+.ng-invalid.ng-touched{
+    border:2px solid #e53935;
+}
+
+.ng-valid.ng-touched{
+    border:2px solid #43a047;
+}
+
+span{
+    display:block;
+    color:#e53935;
+    font-size:13px;
+    margin-top:4px;
+}
+
+/* Checkbox */
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.checkbox input{
+    width:auto;
+}
+
+/* Buttons */
+
+.button-group{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+button{
+    padding:12px 24px;
+    border:none;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button[type="submit"]{
+    background:#1976d2;
+    color:white;
+}
+
+button[type="submit"]:hover{
+    background:#0d47a1;
+}
+
+button[type="button"]{
+    background:#757575;
+    color:white;
+}
+
+button[type="button"]:hover{
+    background:#424242;
+}
+
+button:disabled{
+    background:#bdbdbd;
+    cursor:not-allowed;
+}
+
+/* Success */
+
+.success-message{
+    width:500px;
+    margin:20px auto;
+    background:#e8f5e9;
+    color:#2e7d32;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+    border:1px solid #66bb6a;
+}

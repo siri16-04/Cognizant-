@@ -1,0 +1,40 @@
+.profile-container{
+
+    width:80%;
+    margin:30px auto;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+}
+
+.profile-container h1{
+
+    color:#1976d2;
+
+}
+
+.profile-container h2{
+
+    margin-top:20px;
+
+}
+
+ul{
+
+    padding-left:20px;
+
+}
+
+li{
+
+    margin:12px 0;
+
+    font-size:18px;
+
+}

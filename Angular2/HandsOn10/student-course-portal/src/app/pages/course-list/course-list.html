@@ -1,0 +1,46 @@
+<h1 class="page-title">📚 Available Courses</h1>
+<div *ngIf="errorMessage" class="error">
+  {{ errorMessage }}
+</div>
+<div *ngIf="isLoading()" class="loading">
+    <h2>Loading courses...</h2>
+</div>
+<div style="margin-bottom:20px;">
+
+  <input
+    type="text"
+    placeholder="Search course..."
+    [(ngModel)]="searchTerm">
+
+  <button
+    (click)="updateSearch()">
+    Search
+  </button>
+
+</div>
+<div *ngIf="!isLoading()">
+
+    <div *ngIf="courses.length > 0; else noCourses">
+
+        <div class="course-container">
+
+            <app-course-card
+                *ngFor="let c of courses; trackBy: trackByCourseId"
+                [course]="c"
+                (enrollRequested)="onEnroll($event)">
+            </app-course-card>
+
+        </div>
+
+    </div>
+
+</div>
+
+<ng-template #noCourses>
+    <h2>No courses available.</h2>
+</ng-template>
+
+<p class="selected-course" *ngIf="selectedCourseId">
+    ✅ Selected Course ID:
+    {{ selectedCourseId }}
+</p>

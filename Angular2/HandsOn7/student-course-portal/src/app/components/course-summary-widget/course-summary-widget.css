@@ -1,0 +1,29 @@
+.summary-card{
+
+    width:250px;
+    margin:20px auto;
+    padding:20px;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+
+    text-align:center;
+
+}
+
+.summary-card h2{
+
+    color:#1976d2;
+
+}
+
+.summary-card p{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}

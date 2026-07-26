@@ -1,0 +1,21 @@
+<div class="notification-box">
+
+    <h2>🔔 Notifications</h2>
+
+    <button (click)="addNotification()">
+
+        Add Notification
+
+    </button>
+
+    <ul>
+
+        <li *ngFor="let message of notificationService.getMessages()">
+
+            {{ message }}
+
+        </li>
+
+    </ul>
+
+</div>
