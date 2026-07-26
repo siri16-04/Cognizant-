@@ -1,0 +1,36 @@
+.page-title{
+
+    text-align:center;
+    color:#1565c0;
+    margin-top:30px;
+
+}
+
+.loading{
+
+    text-align:center;
+    margin-top:80px;
+    color:#1976d2;
+    font-size:22px;
+
+}
+
+.course-container{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
+
+}
+
+.selected-course{
+
+    text-align:center;
+    margin-top:30px;
+    font-size:20px;
+    color:#2e7d32;
+    font-weight:bold;
+
+}
